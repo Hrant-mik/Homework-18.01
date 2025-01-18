@@ -5,11 +5,6 @@ class Node:
         self.element = element
         self.next = next
 
-# class Node:
-#     def __init__(self, element, next = None):
-#         self.element = element
-#         self.next = next
-
 
 class LinkedList:
     def __init__(self):
@@ -56,8 +51,6 @@ class LinkedList:
         return linked_list_copy
 
     def extend(self, other):
-        # for i in range(len(other)):
-        #     self.append(other[i])
         current_node = self.head
         while current_node.next:
             current_node = current_node.next
@@ -162,13 +155,6 @@ class LinkedList:
         return count
 
 
-
-# class Node:
-#     def __init__(self, element, next = None):
-#         self.element = element
-#         self.next = next
-        
-                
 class HashTable:
     def __init__(self):
         self.size = 6
